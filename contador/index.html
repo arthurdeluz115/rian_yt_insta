@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '912832049984658');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=912832049984658&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1384247650318636');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1384247650318636&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+  
+<!-- VK Digital Pixel Code -->
+<script>
+!function(w,d,c){
+  (w.VKMetrics=w.VKMetrics||{_q:[]})._q.push(['init',c,'page_view']);
+  var s=d.createElement('script');
+  s.src='https://cf.vkdigital.com.br/vk-metrics.js';
+  s.async=1;
+  s.setAttribute('data-no-xcod-url','');
+  d.head.appendChild(s);
+}(window,document,'pC5X2pPIayW44SBvenfb');
+</script>
+<!-- End VK Digital Pixel Code -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#FFFFFF">
+<title>Assista Agora</title>
+<meta name="description" content="Descubra seu caminho para faturar em euro vendendo produtos físicos na Europa.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://scripts.converteai.net/5c44636d-2807-4c36-8d21-6fb4390eaef0/players/6ac18c8f965fbdd35491dec0/v4/player.js" as="script">
+<link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
+<link rel="dns-prefetch" href="https://cdn.converteai.net">
+<link rel="dns-prefetch" href="https://scripts.converteai.net">
+<link rel="dns-prefetch" href="https://images.converteai.net">
+<link rel="dns-prefetch" href="https://license.vturb.com">
+
+<style>
+:root{
+  --branco: #FFFFFF;
+  --titulo: #030712;
+  --suave: #6B7280;
+  --linha: #E5E7EB;
+  --alerta: #DC2626;
+  --raio: 16px;
+  --container: 400px;
+}
+
+*,*::before,*::after{ box-sizing:border-box; }
+
+html,body{
+  margin:0; padding:0;
+  background:var(--branco);
+  color:var(--titulo);
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+
+body{
+  min-height:100svh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:16px 0;
+}
+
+.vsl-wrap{
+  width:100%;
+  max-width:var(--container);
+  padding:0 16px;
+}
+
+.vsl-player{
+  position:relative;
+  width:100%;
+  border-radius:var(--raio);
+  overflow:hidden;
+  background:#FFFFFF;
+}
+.vsl-player vturb-smartplayer{ display:block; width:100%; }
+
+/* ---------- Pessoas assistindo ao vivo ---------- */
+.ao-vivo{
+  position:absolute;
+  left:12px;
+  bottom:28px;               /* acima da barra de progresso; o JS sobe esse valor quando o botão aparece */
+  transition:bottom .4s ease;
+  z-index:999;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:7px 12px;
+  border-radius:999px;
+  background:rgba(220,38,38,.78);   /* vermelho translúcido: ajuste o .78 se quiser mais/menos transparente */
+  -webkit-backdrop-filter:blur(4px);
+  backdrop-filter:blur(4px);
+  font-size:13px;
+  line-height:1;
+  color:#FFFFFF;
+  pointer-events:none;       /* o clique passa direto para o player */
+}
+.ao-vivo strong{
+  color:#FFFFFF;
+  font-weight:700;
+  font-variant-numeric:tabular-nums;
+}
+.ao-vivo-ponto{
+  width:8px; height:8px;
+  border-radius:50%;
+  background:#FFFFFF;
+  animation:pulsa 1.8s ease-in-out infinite;
+}
+@keyframes pulsa{
+  0%,100%{ opacity:1; transform:scale(1); }
+  50%{ opacity:.35; transform:scale(.8); }
+}
+
+/* ---------- Vagas restantes (elemento grande sobre o vídeo) ---------- */
+.vg{
+  position:absolute;
+  left:50%;
+  bottom:140px;                 /* o JS recalcula para centralizar no vídeo, acima da área do botão */
+  width:calc(100% - 32px);
+  max-width:340px;
+  z-index:999;
+  padding:16px 18px 18px;
+  border-radius:22px;
+  background:rgba(3,7,18,.84);
+  border:1px solid rgba(255,255,255,.16);
+  box-shadow:0 14px 44px rgba(0,0,0,.5);
+  -webkit-backdrop-filter:blur(8px);
+  backdrop-filter:blur(8px);
+  text-align:center;
+  color:#FFFFFF;
+  pointer-events:none;          /* o clique passa direto para o player */
+  opacity:0;
+  transform:translateX(-50%) scale(.94);
+  transition:opacity .5s ease, transform .5s ease;
+}
+.vg[hidden]{ display:none; }
+.vg.visivel{ opacity:1; transform:translateX(-50%) scale(1); }
+
+.vg-topo{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.88);
+}
+.vg-ponto{
+  width:9px; height:9px;
+  border-radius:50%;
+  background:#EF4444;
+  box-shadow:0 0 0 0 rgba(239,68,68,.7);
+  animation:vg-pulsa 1.6s ease-out infinite;
+}
+@keyframes vg-pulsa{
+  0%{ box-shadow:0 0 0 0 rgba(239,68,68,.7); }
+  100%{ box-shadow:0 0 0 10px rgba(239,68,68,0); }
+}
+
+.vg-numero{
+  margin:6px 0 2px;
+  font-size:96px;
+  font-weight:800;
+  line-height:1;
+  letter-spacing:-.02em;
+  color:#FFFFFF;
+  font-variant-numeric:tabular-nums;
+  transition:color .3s ease, text-shadow .3s ease;
+}
+.vg-numero.baixo{
+  color:#F87171;
+  text-shadow:0 0 24px rgba(239,68,68,.55);
+}
+.vg-numero.bump{ animation:bump .4s ease; }
+@keyframes bump{
+  0%{ transform:scale(1); }
+  40%{ transform:scale(1.12); }
+  100%{ transform:scale(1); }
+}
+
+.vg-sub{
+  font-size:14px;
+  color:rgba(255,255,255,.7);
+}
+.vg-sub b{ color:#FFFFFF; font-weight:700; }
+
+.vg-barra{
+  margin:14px 0 12px;
+  height:10px;
+  border-radius:999px;
+  background:rgba(255,255,255,.16);
+  overflow:hidden;
+}
+.vg-barra i{
+  display:block;
+  height:100%;
+  width:100%;
+  border-radius:999px;
+  background:linear-gradient(90deg,#DC2626,#F87171);
+  transition:width .6s ease;
+}
+
+.vg-rodape{
+  font-size:13px;
+  line-height:1.35;
+  color:rgba(255,255,255,.82);
+}
+
+/* ---------- Pop-up de backredirect ---------- */
+.br-overlay{
+  position:fixed;
+  inset:0;
+  z-index:2147483000;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:16px;
+  background:rgba(3,7,18,.65);
+  -webkit-backdrop-filter:blur(3px);
+  backdrop-filter:blur(3px);
+}
+.br-overlay[hidden]{ display:none; }
+
+.br-card{
+  width:100%;
+  max-width:360px;
+  padding:26px 22px 20px;
+  border-radius:var(--raio);
+  background:#FFFFFF;
+  text-align:center;
+  box-shadow:0 20px 50px rgba(0,0,0,.4);
+  animation:br-entra .3s ease;
+}
+@keyframes br-entra{
+  from{ opacity:0; transform:translateY(12px) scale(.97); }
+  to{ opacity:1; transform:none; }
+}
+.br-titulo{
+  margin:0 0 10px;
+  font-size:22px;
+  line-height:1.2;
+  font-weight:800;
+  color:var(--titulo);
+}
+.br-texto{
+  margin:0 0 18px;
+  font-size:16px;
+  line-height:1.45;
+  color:var(--titulo);
+}
+.br-texto strong{ color:var(--alerta); }
+.br-botao{
+  display:block;
+  width:100%;
+  padding:15px 16px;
+  border:0;
+  border-radius:12px;
+  background:#16A34A;
+  color:#FFFFFF;
+  font:inherit;
+  font-size:17px;
+  font-weight:700;
+  cursor:pointer;
+}
+.br-botao:focus-visible,
+.br-fechar:focus-visible{ outline:3px solid #030712; outline-offset:2px; }
+.br-fechar{
+  margin-top:12px;
+  padding:8px;
+  border:0;
+  background:none;
+  font:inherit;
+  font-size:14px;
+  color:var(--suave);
+  text-decoration:underline;
+  cursor:pointer;
+}
+
+/* ---------- Notificação de compra (topo do player) ---------- */
+.notificacao{
+  position:absolute;
+  top:12px;
+  left:12px;
+  right:12px;
+  z-index:999;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:10px 12px;
+  border-radius:16px;
+  background:rgba(255,255,255,.95);
+  -webkit-backdrop-filter:blur(8px);
+  backdrop-filter:blur(8px);
+  box-shadow:0 6px 20px rgba(0,0,0,.28);
+  color:var(--titulo);
+  pointer-events:none;
+  opacity:0;
+  transform:translateY(-14px);
+  transition:opacity .35s ease, transform .35s ease;
+}
+.notificacao.visivel{ opacity:1; transform:none; }
+
+.notificacao-icone{
+  flex:0 0 auto;
+  width:36px; height:36px;
+  border-radius:10px;
+  background:#16A34A;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.notificacao-icone svg{ width:20px; height:20px; display:block; }
+
+.notificacao-corpo{ flex:1 1 auto; min-width:0; }
+.notificacao-topo{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:8px;
+  font-size:12px;
+  line-height:1.2;
+  color:var(--suave);
+}
+.notificacao-topo b{ color:var(--titulo); font-weight:700; }
+.notificacao-texto{
+  margin-top:2px;
+  font-size:13px;
+  line-height:1.3;
+  color:var(--titulo);
+}
+
+@media (prefers-reduced-motion: reduce){
+  .ao-vivo-ponto,
+  .vg-ponto,
+  .vg-numero.bump{ animation:none; }
+  .vg{ transition:opacity .2s ease; transform:translateX(-50%); }
+  .notificacao{ transition:opacity .2s ease; transform:none; }
+}
+</style>
+</head>
+<body>
+
+<main class="vsl-wrap">
+
+  <div class="vsl-player">
+    <vturb-smartplayer id="vid-6ac18c8f965fbdd35491dec0" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"><div class="vturb-player-placeholder" style="position: relative; width: 100%; padding: 177.77777777777777% 0 0; z-index: 0; background-color: black;"></div></vturb-smartplayer>
+
+    <div class="ao-vivo" aria-live="off">
+      <span class="ao-vivo-ponto" aria-hidden="true"></span>
+      <span><strong id="aoVivoNumero">112</strong> pessoas assistindo agora</span>
+    </div>
+
+    <div class="notificacao" id="notificacao" role="status" aria-live="off">
+      <div class="notificacao-icone" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+      </div>
+      <div class="notificacao-corpo">
+        <div class="notificacao-topo"><b>Compra aprovada</b><span id="notifTempo">agora</span></div>
+        <div class="notificacao-texto"><strong id="notifNome">Rafaela</strong> acabou de garantir a Vitrine do Dinheiro</div>
+      </div>
+    </div>
+
+    <div class="vg" id="vg" hidden aria-live="off">
+      <div class="vg-topo"><span class="vg-ponto" aria-hidden="true"></span><span id="vgRotulo">Vagas restantes</span></div>
+      <div class="vg-numero" id="vgNumero">49</div>
+      <div class="vg-sub">de <b>49</b> vagas</div>
+      <div class="vg-barra"><i id="vgBarra"></i></div>
+      <div class="vg-rodape" id="vgRodape">As vagas estão sendo preenchidas agora</div>
+    </div>
+  </div>
+
+</main>
+
+<div class="br-overlay" id="brOverlay" hidden role="dialog" aria-modal="true" aria-labelledby="brTitulo">
+  <div class="br-card">
+    <h2 class="br-titulo" id="brTitulo">Espera! Antes de sair...</h2>
+    <p class="br-texto">Liberei <strong>R$ 100 de desconto</strong> na sua vaga. Clique no botão abaixo e garanta a Vitrine do Dinheiro com o valor reduzido.</p>
+    <button class="br-botao" id="brBotao" type="button">Quero meus R$ 100 de desconto</button>
+    <button class="br-fechar" id="brFechar" type="button">Não, obrigado</button>
+  </div>
+</div>
+
+<script>
+
+const CONFIG = {
+  checkoutUrl: 'https://app.ephra.io/checkout/5do1xf2',
+  vslPlayerUrl: 'https://scripts.converteai.net/5c44636d-2807-4c36-8d21-6fb4390eaef0/players/6ac18c8f965fbdd35491dec0/v4/player.js'
+};
+
+const s = document.createElement('script');
+s.src = CONFIG.vslPlayerUrl;
+s.async = true;
+document.head.appendChild(s);
+
+/* ============================================================
+ * Checkout — preserva utm_*, fbclid, gclid e vk_source/vk_ad_id
+ * (mantida caso o botão do vídeo use HTML customizado chamando
+ * window.irParaCheckout(); se o botão usar o campo "Link" nativo
+ * do vturb, essa função não é necessária)
+ * ============================================================ */
+function montarUrlCheckout(base){
+  const destino = base || CONFIG.checkoutUrl;
+  let url;
+  try{ url = new URL(destino); } catch(e){ return destino; }
+
+  new URLSearchParams(window.location.search).forEach((valor, chave) => {
+    const k = chave.toLowerCase();
+    if (k.startsWith('utm_') || k === 'fbclid' || k === 'gclid' || k === 'vk_source' || k === 'vk_ad_id') url.searchParams.set(chave, valor);
+  });
+
+  return url.toString();
+}
+
+function irParaCheckout(){
+  window.location.href = montarUrlCheckout();
+}
+window.irParaCheckout = irParaCheckout;
+</script>
+
+<script>
+/* ============================================================
+ * Contadores sincronizados com o vídeo (vturb)
+ *
+ * AJUSTE ESTES VALORES (em segundos):
+ *   duracaoVideo  -> duração total do vídeo
+ *   pitchInicio   -> segundo em que o pitch começa (notificações, backredirect)
+ *   vagasAparece  -> segundo em que o elemento de vagas aparece sobre o vídeo
+ *   vagasTermina  -> segundo em que as vagas devem chegar a 04
+ *                    (use null para ir até o fim do vídeo)
+ * ============================================================ */
+const CONTADORES = {
+  debug: false,                 // true = mostra logs no console para testar
+  duracaoVideo: 1015,           // duração do vídeo: 16:55 (16*60 + 55)
+  pitchInicio: 864,             // pitch começa em 14:24 (14*60 + 24)
+
+  // Elemento de vagas sobre o vídeo
+  vagasAparece: 950,            // aparece em 15:50 (15*60 + 50)
+  vagasTermina: null,           // null = chega a 04 no fim do vídeo (16:55)
+
+  proporcaoVideo: 16 / 9,       // altura / largura do vídeo (9:16 vertical = 16/9)
+  topoVideoManual: 0,           // plano B: altura (px) do título acima do vídeo, só usada se o código não achar o <video>
+
+  // Quando o botão do vturb aparece (14:24), o contador "ao vivo" sobe para não ficar em cima dele
+  aoVivoSobe: {
+    em: 864,                    // segundo em que o botão aparece (14:24)
+    px: 100                     // quantos pixels o contador sobe (aumente se ainda tocar no botão)
+  },
+
+  aoVivoInicio: 112,
+  aoVivoFim: 94,
+
+  vagasInicio: 49,
+  vagasFim: 4,
+
+  notificacoes: {
+    nomes: ['Rafaela', 'Juliana', 'Camila', 'Fernanda', 'Mariana', 'Patrícia', 'Bruna', 'Aline',
+            'Larissa', 'Bianca', 'Vanessa', 'Carla', 'Gabriel', 'Lucas', 'Rodrigo', 'Thiago',
+            'Marcos', 'Felipe', 'Pedro', 'Diego'],
+    inicio: 864,            // segundo do vídeo em que começam (14:24, junto com o pitch)
+    duracao: 4500,          // tempo que cada notificação fica na tela (ms)
+    intervaloMin: 13000,    // intervalo mínimo entre notificações (ms)
+    intervaloMax: 23000     // intervalo máximo entre notificações (ms)
+  },
+
+  backredirect: {
+    ativo: true,
+    inicio: null,           // segundo do vídeo a partir do qual vale (null = início do pitch, 14:24). Para testar, use 0
+    urlDesconto: 'https://pay.hub.la/5C8PjYZu12WJtPH2g7pQ'   // checkout com os R$ 100 de desconto
+  }
+};
+
+(function(){
+  const C = CONTADORES;
+  const log = (...a) => { if (C.debug) console.log('[contadores]', ...a); };
+
+  const elPlayer   = document.getElementById('vid-6ac18c8f965fbdd35491dec0');
+  const elAoVivo   = document.getElementById('aoVivoNumero');
+  const elVg        = document.getElementById('vg');
+  const elVgNumero  = document.getElementById('vgNumero');
+  const elVgBarra   = document.getElementById('vgBarra');
+  const elVgRotulo  = document.getElementById('vgRotulo');
+  const elVgRodape  = document.getElementById('vgRodape');
+
+  const rand = (min, max) => min + Math.random() * (max - min);
+  const pad2 = n => String(n).padStart(2, '0');
+
+  /* ---------- tempo do vídeo ---------- */
+  let tempo = 0;
+  let tocando = false;
+  let recebeuTimeupdate = false;
+  let ultimoUpdate = 0;
+
+  function lerTempo(arg){
+    if (typeof arg === 'number') return arg;
+    if (arg && typeof arg.currentTime === 'number') return arg.currentTime;
+    if (arg && arg.detail){
+      if (typeof arg.detail === 'number') return arg.detail;
+      if (typeof arg.detail.currentTime === 'number') return arg.detail.currentTime;
+    }
+    return null;
+  }
+
+  function aoTimeupdate(arg){
+    const t = lerTempo(arg);
+    if (t === null || !isFinite(t)) return;
+    recebeuTimeupdate = true;
+    if (t !== tempo) tocando = true;   // o tempo avançou = o vídeo está tocando
+    tempo = t;
+    ultimoUpdate = Date.now();
+    renderVagas();
+    verificarNotificacoes();
+  }
+
+  // Plano B: se o player não emitir timeupdate, conta o tempo com play/pause
+  setInterval(() => {
+    if (recebeuTimeupdate && tocando && Date.now() - ultimoUpdate > 2000){
+      tocando = false;                 // tempo parou de avançar = pausado
+    }
+    if (tocando && !recebeuTimeupdate){
+      tempo += 1;
+      renderVagas();
+      verificarNotificacoes();
+    }
+  }, 1000);
+
+  /* ---------- pessoas assistindo ao vivo (112 -> 94) ---------- */
+  let aoVivo = C.aoVivoInicio;
+
+  function alvoAoVivo(){
+    const p = Math.min(1, Math.max(0, tempo / C.duracaoVideo));
+    return C.aoVivoInicio - (C.aoVivoInicio - C.aoVivoFim) * p;
+  }
+
+  function tickAoVivo(){
+    if (tocando || tempo > 0){
+      const alvo = Math.round(alvoAoVivo());
+      let novo = aoVivo;
+
+      if (aoVivo > alvo){
+        novo -= (Math.random() < 0.25 ? 2 : 1);   // desce acompanhando a curva
+      } else {
+        const r = Math.random();                   // oscila perto da curva
+        if (r < 0.25) novo -= 1;
+        else if (r > 0.80) novo += 1;
+      }
+
+      novo = Math.max(C.aoVivoFim, Math.min(C.aoVivoInicio, novo));
+      if (novo !== aoVivo){
+        aoVivo = novo;
+        elAoVivo.textContent = aoVivo;
+      }
+    }
+    setTimeout(tickAoVivo, rand(3500, 8000));
+  }
+  tickAoVivo();
+
+  /* ---------- notificações de compra (começam com o pitch) ---------- */
+  const elNotif      = document.getElementById('notificacao');
+  const elNotifNome  = document.getElementById('notifNome');
+  const elNotifTempo = document.getElementById('notifTempo');
+  let notifIniciado = false;
+  let ultimoNome = null;
+
+  function mostrarNotificacao(){
+    const nomes = C.notificacoes.nomes;
+    let nome;
+    do { nome = nomes[Math.floor(Math.random() * nomes.length)]; }
+    while (nome === ultimoNome && nomes.length > 1);
+    ultimoNome = nome;
+
+    elNotifNome.textContent = nome;
+    elNotifTempo.textContent = Math.random() < 0.7 ? 'agora' : 'há ' + (1 + Math.floor(Math.random() * 3)) + ' min';
+
+    log('notificação:', nome);
+    elNotif.classList.add('visivel');
+    setTimeout(() => elNotif.classList.remove('visivel'), C.notificacoes.duracao);
+  }
+
+  function agendarNotificacao(primeira){
+    const espera = primeira ? rand(3000, 5000) : rand(C.notificacoes.intervaloMin, C.notificacoes.intervaloMax);
+    setTimeout(() => {
+      if (tocando) mostrarNotificacao();   // só aparece enquanto o vídeo está tocando
+      agendarNotificacao(false);
+    }, espera);
+  }
+
+  function iniciarNotificacoes(){
+    if (notifIniciado) return;
+    notifIniciado = true;
+    log('iniciando notificações');
+    agendarNotificacao(true);
+  }
+
+  function verificarNotificacoes(){
+    if (tempo >= C.notificacoes.inicio) iniciarNotificacoes();
+    armarBackredirect();   // aproveita o mesmo gatilho de tempo para armar o backredirect
+    ajustarAoVivo();       // sobe o contador "ao vivo" quando o botão aparece
+  }
+
+  /* ---------- vagas (49 -> 04, de 2 em 2 e 3 em 3) ---------- */
+  // Sorteia uma sequência de passos 2 e 3 que soma exatamente 49 - 4 = 45
+  function sortearPassos(total){
+    const passos = [];
+    let resto = total;
+    while (resto > 0){
+      let p = Math.random() < 0.5 ? 2 : 3;
+      if (resto - p === 1) p = (p === 2 ? 3 : 2);  // evita sobrar 1
+      if (p > resto) p = resto;                    // segurança
+      passos.push(p);
+      resto -= p;
+    }
+    return passos;
+  }
+
+  const passos = sortearPassos(C.vagasInicio - C.vagasFim);
+
+  // Distribui as quedas entre o momento em que o elemento aparece e o fim da janela, com tempos irregulares
+  const vagasFimJanela = C.vagasTermina || C.duracaoVideo;
+  const janela = (vagasFimJanela - C.vagasAparece) * 0.96;
+  const momentos = passos
+    .map((_, i) => C.vagasAparece + ((i + 0.5 + rand(-0.35, 0.35)) / passos.length) * janela)
+    .sort((a, b) => a - b);
+
+  let vagasMostrando = false;
+  let vagasAtual = null;
+
+  function renderVagas(){
+    if (tempo < C.vagasAparece) return;
+
+    if (!vagasMostrando){
+      vagasMostrando = true;
+      elVg.hidden = false;
+      posicionarVagasGrande();
+      requestAnimationFrame(() => requestAnimationFrame(() => elVg.classList.add('visivel')));
+      log('mostrando vagas');
+    }
+
+    let vagas = C.vagasInicio;
+    for (let i = 0; i < momentos.length; i++){
+      if (tempo >= momentos[i]) vagas -= passos[i];
+    }
+    vagas = Math.max(C.vagasFim, vagas);
+
+    if (vagas !== vagasAtual){
+      const primeira = vagasAtual === null;
+      vagasAtual = vagas;
+      const baixo = vagas <= 10;
+
+      elVgNumero.textContent = pad2(vagas);
+      elVgNumero.classList.toggle('baixo', baixo);
+      elVgBarra.style.width = Math.max(4, (vagas / C.vagasInicio) * 100) + '%';
+      elVgRotulo.textContent = baixo ? 'Últimas vagas' : 'Vagas restantes';
+      elVgRodape.textContent = baixo ? 'Está acabando! Garanta a sua antes que feche' : 'As vagas estão sendo preenchidas agora';
+
+      if (!primeira){
+        elVgNumero.classList.remove('bump');
+        void elVgNumero.offsetWidth;
+        elVgNumero.classList.add('bump');
+      }
+    }
+  }
+
+  // Centraliza o elemento no VÍDEO. Como o botão do vturb aparece embaixo do vídeo
+  // (a partir de aoVivoSobe.em) e faz o player crescer, a posição é medida a partir
+  // do fundo do player somando essa área extra.
+  function posicionarVagasGrande(){
+    if (elVg.hidden) return;
+    const larguraVideo = elPlayer.getBoundingClientRect().width;
+    if (!larguraVideo) return;
+    const alturaVideo   = larguraVideo * C.proporcaoVideo;
+    const areaDoBotao   = tempo >= C.aoVivoSobe.em ? C.aoVivoSobe.px : 0;
+    const alturaCard    = elVg.offsetHeight;
+    const bottom = areaDoBotao + (alturaVideo - alturaCard) / 2;
+    elVg.style.bottom = Math.max(areaDoBotao + 48, bottom) + 'px';
+  }
+
+  /* ---------- posição dos elementos sobre o VÍDEO ---------- */
+  // O player do vturb tem título, subtítulo e botão além do vídeo, então a altura
+  // do container não serve de referência. Aqui o código procura o <video> de verdade
+  // (inclusive dentro de shadow DOM) e posiciona o contador e a notificação nele.
+  const elAoVivoBox   = document.querySelector('.ao-vivo');
+  const elNotifBox    = document.getElementById('notificacao');
+  const elWrapPlayer  = document.querySelector('.vsl-player');
+  const BASE_AO_VIVO  = 28;   // distância do contador até o fundo do player, antes do botão aparecer
+
+  // Sobe o contador quando o botão do vturb aparece, para ele não ficar em cima
+  function ajustarAoVivo(){
+    const sobe = tempo >= C.aoVivoSobe.em ? C.aoVivoSobe.px : 0;
+    elAoVivoBox.style.bottom = (BASE_AO_VIVO + sobe) + 'px';
+  }
+  const MARGEM_TOPO   = 12;   // distância da notificação até o topo do vídeo
+  let videoEl = null;
+  let avisouPlanoB = false;
+
+  function acharVideo(no){
+    if (!no || !no.querySelector) return null;
+    const v = no.querySelector('video');
+    if (v) return v;
+    const todos = no.querySelectorAll('*');
+    for (let i = 0; i < todos.length; i++){
+      if (todos[i].shadowRoot){
+        const achado = acharVideo(todos[i].shadowRoot);
+        if (achado) return achado;
+      }
+    }
+    return null;
+  }
+
+  function posicionarSobreVideo(){
+    const base = elWrapPlayer.getBoundingClientRect();
+    if (!base.width) return;
+
+    if (!videoEl || !videoEl.isConnected){
+      videoEl = acharVideo(elPlayer.shadowRoot) || acharVideo(elPlayer);
+      if (videoEl) log('vídeo encontrado dentro do player');
+    }
+
+    let topoVideo, fundoVideo;
+    if (videoEl){
+      const r = videoEl.getBoundingClientRect();
+      if (r.height > 50){
+        topoVideo  = r.top    - base.top;
+        fundoVideo = r.bottom - base.top;
+      }
+    }
+
+    if (topoVideo === undefined){
+      // Plano B: não achou o <video>; usa a proporção e o deslocamento manual
+      if (!avisouPlanoB){ avisouPlanoB = true; log('vídeo NÃO encontrado, usando plano B (topoVideoManual)'); }
+      topoVideo  = C.topoVideoManual || 0;
+      fundoVideo = topoVideo + base.width * C.proporcaoVideo;
+    }
+
+    elNotifBox.style.top  = Math.max(0, topoVideo + MARGEM_TOPO) + 'px';
+    posicionarVagasGrande();
+  }
+
+  posicionarSobreVideo();
+  window.addEventListener('resize', posicionarSobreVideo);
+  window.addEventListener('load', posicionarSobreVideo);
+  setInterval(posicionarSobreVideo, 500);   // acompanha o título/botão do vturb aparecendo e mudando de tamanho
+
+  /* ---------- backredirect (botão voltar, só a partir do pitch) ---------- */
+  const BR = C.backredirect;
+  const elBrOverlay = document.getElementById('brOverlay');
+  const elBrBotao   = document.getElementById('brBotao');
+  const elBrFechar  = document.getElementById('brFechar');
+  let brArmado = false;
+  let brMostrado = false;
+  let interagiu = false;
+
+  function brInicio(){ return BR.inicio === null ? C.pitchInicio : BR.inicio; }
+
+  // O Chrome ignora entradas de histórico criadas sem interação do usuário,
+  // então só "armamos" depois de um toque/clique/tecla na página.
+  function armarBackredirect(){
+    if (!BR.ativo || brArmado || !interagiu || tempo < brInicio()) return;
+    brArmado = true;
+    try { history.pushState({ backredirect: true }, '', location.href); } catch(e){}
+    log('backredirect armado');
+  }
+
+  ['pointerdown', 'touchstart', 'keydown', 'click'].forEach(ev => {
+    window.addEventListener(ev, () => { interagiu = true; armarBackredirect(); }, { passive: true });
+  });
+
+  function abrirPopupBack(){
+    elBrOverlay.hidden = false;
+    document.body.style.overflow = 'hidden';
+    elBrBotao.focus();
+    try { if (window.fbq) fbq('trackCustom', 'BackRedirectPopup'); } catch(e){}
+    log('pop-up de backredirect aberto');
+  }
+
+  function fecharPopupBack(){
+    elBrOverlay.hidden = true;
+    document.body.style.overflow = '';
+  }
+
+  window.addEventListener('popstate', () => {
+    if (brArmado && !brMostrado){
+      brMostrado = true;       // só aparece uma vez; no próximo "voltar" a pessoa sai normalmente
+      abrirPopupBack();
+    }
+  });
+
+  elBrBotao.addEventListener('click', () => {
+    try { if (window.fbq) fbq('trackCustom', 'BackRedirectClick'); } catch(e){}
+    window.location.href = montarUrlCheckout(BR.urlDesconto || null);
+  });
+  elBrFechar.addEventListener('click', fecharPopupBack);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !elBrOverlay.hidden) fecharPopupBack(); });
+
+  /* ---------- conexão com o player do vturb ---------- */
+  let conectado = false;
+
+  function conectar(){
+    if (conectado) return true;
+
+    let inst = null;
+    if (elPlayer && typeof elPlayer.on === 'function') inst = elPlayer;
+    else if (window.smartplayer && window.smartplayer.instances && window.smartplayer.instances[0]) inst = window.smartplayer.instances[0];
+
+    if (!inst || typeof inst.on !== 'function') return false;
+
+    inst.on('timeupdate', aoTimeupdate);
+    inst.on('play',  () => { tocando = true;  log('play'); verificarNotificacoes(); });
+    inst.on('pause', () => { tocando = false; log('pause'); });
+    inst.on('ended', () => { tocando = false; log('ended'); });
+
+    conectado = true;
+    log('conectado ao player');
+    return true;
+  }
+
+  elPlayer.addEventListener('player:ready', conectar);
+
+  renderVagas();   // se vagasAparece for 0, o elemento já aparece ao carregar a página
+
+  let tentativas = 0;
+  const poll = setInterval(() => {
+    tentativas++;
+    if (conectar() || tentativas > 120) clearInterval(poll);
+  }, 500);
+})();
+</script>
+
+</body>
+</html>
